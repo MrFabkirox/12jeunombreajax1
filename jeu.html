@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<title></title>
+
+<script src="jquery.js"></script>
+
+</head>
+<body>
+<script>
+
+	function essayerAux(reponse) {
+		document.getElementById("display").innerHTML = reponse;
+	}
+
+	function essayer() {
+		var txt = $("#num").val();
+		$.ajax({url: "jeu.php",
+			data : {num: txt},
+			type : 'GET',
+			success : essayerAux
+		});
+	}
+
+</script>
+
+<h3>12jeunombreajax1, jeu.html</h3>
+
+<div id="form">
+
+	<input type="text" id="num"/>
+	<button onclick="essayer()">jouer</button>  
+
+</div>
+
+<p><span id="display">Here is the display</span></p>
+
+</body>
+
+</html>
