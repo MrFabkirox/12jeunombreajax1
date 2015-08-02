@@ -5,6 +5,7 @@
 	<title>12jeunombreajax1, jeu</title>
 	<script src="jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta content="text/html" charset="utf-8" />
 
 </head>
 <body>

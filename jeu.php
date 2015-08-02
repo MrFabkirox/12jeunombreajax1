@@ -14,6 +14,10 @@
 
 	if($num == $_SESSION['solution']) {
 		echo("bravo !, nombre was ".$_SESSION['solution']);
+
+		$_SESSION['solution'] = rand(0, 100);
+		$_SESSION['nbessais'] = 0;
+
 	} elseif($num > $_SESSION['solution']) {
 		echo("nb too big");
 		$_SESSION['nbessais'] ++;
